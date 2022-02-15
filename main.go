@@ -15,7 +15,6 @@ func handlerFunc(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusNotFound)
 		fmt.Fprint(w, "<h1>We could find the page you were looking for :(</h1><p>Please email us if you keep being sent to an invalid page.</p>")
 	}
-
 }
 
 func main() {
